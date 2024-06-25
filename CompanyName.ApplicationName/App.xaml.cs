@@ -4,7 +4,7 @@ using System.Windows.Media;
 using CompanyName.ApplicationName.DataModels.Enums;
 using CompanyName.ApplicationName.Managers;
 using CompanyName.ApplicationName.Managers.Interfaces;
-using CompanyName.ApplicationName.Models.DataProviders;
+//using CompanyName.ApplicationName.Models.DataProviders;
 using CompanyName.ApplicationName.Models.Interfaces;
 using CompanyName.ApplicationName.ViewModels;
 using CompanyName.ApplicationName.ViewModels.Interfaces;
@@ -39,7 +39,7 @@ namespace CompanyName.ApplicationName
         private void RegisterDependencies()
         {
             DependencyManager.Instance.ClearRegistrations();
-            DependencyManager.Instance.Register<IDataProvider, ApplicationDataProvider>();
+            //DependencyManager.Instance.Register<IDataProvider, ApplicationDataProvider>();
             DependencyManager.Instance.Register<IUiThreadManager, UiThreadManager>();
             DependencyManager.Instance.Register<IHardDriveManager, HardDriveManager>();
             DependencyManager.Instance.Register<IUserViewModel, UserViewModel>();
